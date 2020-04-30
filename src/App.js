@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <h1>Hello, World!</h1>
-  );
+class App extends Component {
+  render(){
+    const dom = (
+      <React.Fragment>
+        <input type="text" onChange={() => {console.log("Hi!!!")}}></input>
+        <h1>fuck you</h1>
+      </React.Fragment>
+    );
+    return dom;
+  }
 }
 
 export default App;
